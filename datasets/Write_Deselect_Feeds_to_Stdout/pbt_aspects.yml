@@ -1,0 +1,25 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: header
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: deselected_feeds
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: trailer
+    type: string
+    nullable: false
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

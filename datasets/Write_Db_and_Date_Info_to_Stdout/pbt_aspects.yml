@@ -1,0 +1,18 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: file_date
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
+  - name: source_extract_instance_directory
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []

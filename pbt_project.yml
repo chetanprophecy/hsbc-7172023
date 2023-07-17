@@ -1,0 +1,166 @@
+name: HSBC_Abinitio
+description: ''
+version: 0.0.1
+author: ashish@prophecy.io
+language: scala
+buildSystem: ''
+buildSystemDetails:
+  artefactID: hsbc_abinitio
+  parentArtefactID: ashishprophecy.io_team
+  buildSystem: maven
+  author: null
+  createdAt: '2023-05-29 04:51:53'
+pipelines:
+  pipelines/detect_feed_v3:
+    name: detect_feed_v3
+    description: ''
+    author: ashish@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: scala
+    createdAt: '2023-05-30 13:06:29'
+    datasets:
+      inputs:
+      - datasets/Incomplete_Feed_White_List
+      - datasets/Obtain_List_Of_Unprocessed_Directories_Processed_Directory_File
+      outputs:
+      - datasets/Processed_Directory_File
+      - datasets/Write_Db_and_Date_Info_to_Stdout
+      - datasets/Write_Deselect_Feeds_to_Stdout
+      - datasets/Write_Files_Still_Active_Files_to_Stdout
+      - datasets/Write_Incomplete_Date_Info_to_Stdout
+      - datasets/Write_Missing_Files_to_Stdout
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/Incomplete_Feed_White_List:
+    name: Incomplete_Feed_White_List
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 08:45:54'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 08:45:55'
+  datasets/Obtain_List_Of_Unprocessed_Directories_Processed_Directory_File:
+    name: Obtain_List_Of_Unprocessed_Directories_Processed_Directory_File
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 08:49:29'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 08:49:29'
+  datasets/Write_Db_and_Date_Info_to_Stdout:
+    name: Write_Db_and_Date_Info_to_Stdout
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 08:52:46'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 08:52:46'
+  datasets/Write_Deselect_Feeds_to_Stdout:
+    name: Write_Deselect_Feeds_to_Stdout
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 09:04:16'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 09:04:16'
+  datasets/Write_Files_Still_Active_Files_to_Stdout:
+    name: Write_Files_Still_Active_Files_to_Stdout
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 09:06:36'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 09:06:36'
+  datasets/Write_Missing_Files_to_Stdout:
+    name: Write_Missing_Files_to_Stdout
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 09:11:25'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 09:11:25'
+  datasets/Write_Incomplete_Date_Info_to_Stdout:
+    name: Write_Incomplete_Date_Info_to_Stdout
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 09:12:25'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 09:12:26'
+  datasets/Processed_Directory_File:
+    name: Processed_Directory_File
+    description: ''
+    author: ashish@prophecy.io
+    createdAt: '2023-05-31 09:16:46'
+    mode: batch
+    physicalDatasets:
+      ashish_dev:
+        fabricId: 5
+        datasetType: File
+        description: ''
+        author: ashish@prophecy.io
+        createdAt: '2023-05-31 09:16:46'
+templates: {}
+jobs: {}
+functions:
+  author: null
+  createdAt: '2023-05-29 04:51:53'
+  gems: {}
+  udfs:
+    udfs/get_fileset_version_inner:
+      name: get_fileset_version_inner
+      description: ''
+      tags: []
+      inputs: []
+      outputs: []
+      author: ashish@prophecy.io
+      createdAt: '2022-12-15 18:04:50'
+  udafs: {}
+  expressions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: []
+projectDependencies: {}
+pipelineConfigurations: {}

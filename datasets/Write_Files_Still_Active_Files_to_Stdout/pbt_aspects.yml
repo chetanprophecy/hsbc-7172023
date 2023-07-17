@@ -1,0 +1,11 @@
+version: 1
+schema:
+  type: struct
+  fields:
+  - name: missing_file
+    type: string
+    nullable: true
+    metadata:
+      description: ''
+      mappings: []
+      tags: []
